@@ -34,5 +34,18 @@ class DefaultController extends Controller
         );
     
     }
+
+    /**
+     * @Route("/producto/new", name="producto_new")
+     * @Method({"POST"})     
+     */
+    public function newProducto(Request $request)
+    {
+        // replace this example code with whatever you need
+        return new Response(
+                json_encode($request->request->all())
+        );
+    
+    }
 }
 
