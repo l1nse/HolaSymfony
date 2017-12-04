@@ -47,5 +47,19 @@ class DefaultController extends Controller
         );
     
     }
+
+
+    /**
+     * @Route("/producto/{id}/edit", name="producto_edit")
+     * @Method({"PUT"})     
+     */
+    public function editProducto($id)
+    {
+        // replace this example code with whatever you need
+        return new Response(
+            'Editar producto id: '.$id             
+        );
+    
+    }
 }
 
