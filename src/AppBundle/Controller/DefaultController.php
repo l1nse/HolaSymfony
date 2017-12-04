@@ -61,5 +61,18 @@ class DefaultController extends Controller
         );
     
     }
+
+    /**
+     * @Route("/producto/{id}", name="producto_delete")
+     * @Method({"DELETE"})     
+     */
+    public function deleteProducto($id)
+    {
+        // replace this example code with whatever you need
+        return new Response(
+            'Borrar producto id: '.$id             
+        );
+    
+    }
 }
 
